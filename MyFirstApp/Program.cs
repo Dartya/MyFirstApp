@@ -1,4 +1,5 @@
 ﻿using System;
+using MyInt = System.Int32;
 
 namespace MyFirstApp
 {
@@ -6,7 +7,10 @@ namespace MyFirstApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Попытались и сделали");
+            MyInt i = 4;
+            i++;
+            Console.WriteLine("Попытались и сделали, "+i);
+            Console.WriteLine("Stop");
         }
     }
 }
