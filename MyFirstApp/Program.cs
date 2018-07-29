@@ -6,7 +6,7 @@ namespace MyFirstApp
     {
         static void Main(string[] args)
         {
-            System.Console.out
+            Console.WriteLine("Попытались и сделали");
         }
     }
 }
