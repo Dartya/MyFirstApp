@@ -1,5 +1,4 @@
 ﻿using System;
-using MyInt = System.Int32;
 
 namespace MyFirstApp
 {
@@ -7,12 +6,39 @@ namespace MyFirstApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello First C# Program");
-            Console.WriteLine("End Hello everyone!");
-            MyInt i = 4;
-            i++;
-            Console.WriteLine("Попытались и сделали, "+i);
-            Console.WriteLine("Stop");
+            try
+            {
+                double a = 1;
+                double b = 3.5;
+                double x;
+                Console.WriteLine("Введите значение х:");
+                string res = Console.ReadLine();
+                if (double.TryParse(res, out x))
+                {
+                    if ((x >= a) && (x <= b))
+                    {
+                        Console.WriteLine("х = " + x + " внутри отрезка");
+                    }
+                    else
+                    {
+                        Console.WriteLine("х = " + x + " не входит в отрезок");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Error!");
+                }
+            }
+
+            catch (Exception e) {
+                Console.Write("Произошла ошибка");
+            }
+
+            finally
+            {
+                Console.Write("Press <Enter>");
+                Console.ReadLine();
+            }
         }
     }
 }
