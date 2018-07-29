@@ -1,4 +1,5 @@
 ﻿using System;
+using MyInt = System.Int32;
 
 namespace MyFirstApp
 {
@@ -10,6 +11,10 @@ namespace MyFirstApp
             Console.WriteLine("End Hello everyone!");
             Console.WriteLine("End some blabla!");
             Console.WriteLine("Endone!");
+            MyInt i = 4;
+            i++;
+            Console.WriteLine("Попытались и сделали, "+i);
+            Console.WriteLine("Stop");
         }
     }
 }
