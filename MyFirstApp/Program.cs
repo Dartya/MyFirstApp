@@ -31,7 +31,7 @@ namespace MyFirstApp
             }
 
             catch (Exception e) {
-                Console.Write("Произошла ошибка");
+                Console.WriteLine(e.ToString());
             }
 
             finally
