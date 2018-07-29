@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MyFirstApp
 {
@@ -10,6 +6,10 @@ namespace MyFirstApp
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello First C# Program");
+            Console.WriteLine("End Hello everyone!");
+            Console.WriteLine("End some blabla!");
+            Console.WriteLine("Endone!");
         }
     }
 }
